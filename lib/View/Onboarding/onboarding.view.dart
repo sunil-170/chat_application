@@ -23,7 +23,6 @@ class Onboardingview extends StatelessWidget {
         child: Column(
           children: [
             Row(
-              // crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Image.asset(AppImages().app_vector),
@@ -79,10 +78,14 @@ class Onboardingview extends StatelessWidget {
                 )
               ],
             ),
+            // const Spacer(),
             Row(
               children: [
                 GeneralTextButton(
-                    isExpanded: true, onTap: () {}, title: "Login With Email")
+                    isDarkTheme: false,
+                    isExpanded: true,
+                    onTap: () {},
+                    title: "Signup With mail")
               ],
             )
           ],

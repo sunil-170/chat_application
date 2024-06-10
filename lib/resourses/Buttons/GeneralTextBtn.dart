@@ -17,7 +17,7 @@ class GeneralTextButton extends StatelessWidget {
       this.isDarkTheme = true,
       this.isExpanded = false,
       this.showBorder = false,
-      this.btnColor = const Color(0xff0000000)});
+      this.btnColor = const Color(0xfffffffff)});
 
   final font = GetTextThemes();
 
