@@ -1,9 +1,13 @@
-import 'package:chat_application/resourses/components/utils/App_colors.dart';
 import 'package:flutter/material.dart';
 
 class LoginTile extends StatelessWidget {
-  LoginTile({super.key, required this.image});
+  LoginTile({
+    super.key,
+    required this.image,
+    required this.Bordercolor,
+  });
   String image;
+  Color Bordercolor;
 
   @override
   Widget build(BuildContext context) {
@@ -12,8 +16,10 @@ class LoginTile extends StatelessWidget {
         decoration: BoxDecoration(
             shape: BoxShape.circle,
             // borderRadius: BorderRadius.circular(8),
-            border: Border.all(color: AppColors().dark_grey, width: 1)),
-        child: Image.asset(image),
+            border: Border.all(color: Bordercolor, width: 1)),
+        child: Image.asset(
+          image,
+        ),
       ),
     );
   }

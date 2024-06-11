@@ -18,7 +18,7 @@ class _SplashViewState extends State<SplashView> {
   @override
   void initState() {
     Future.delayed(
-        Duration.zero, () => MyRoutes.pushto(context, const Onboardingview()));
+        Duration.zero, () => MyRoutes.pushto(context, Onboardingview()));
     super.initState();
   }
 

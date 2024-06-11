@@ -26,10 +26,10 @@ class GeneralTextButton extends StatelessWidget {
     final TextBtn = SizedBox(
       child: TextButton(
           style: TextButton.styleFrom(
-              padding: EdgeInsets.symmetric(vertical: 14.h, horizontal: 10.w),
+              padding: EdgeInsets.symmetric(vertical: 20.h, horizontal: 12.w),
               backgroundColor: btnColor,
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8.r),
+                  borderRadius: BorderRadius.circular(15.r),
                   side: showBorder
                       ? BorderSide(width: 1, color: AppColors().henna)
                       : BorderSide.none)),
