@@ -6,6 +6,7 @@ import 'package:chat_application/resourses/components/utils/App_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:gap/gap.dart';
+import 'package:get/get.dart';
 
 class SignUpView extends StatelessWidget {
   const SignUpView({super.key});
@@ -51,6 +52,20 @@ class SignUpView extends StatelessWidget {
                   title: "Create an account"),
             ],
           ),
+          ListTile(
+            title: Text("msg".tr),
+            subtitle: Text("name".tr),
+          ),
+          TextButton(
+              onPressed: () {
+                Get.updateLocale(const Locale("en_US"));
+              },
+              child: const Text("english")),
+          TextButton(
+              onPressed: () {
+                Get.updateLocale(const Locale("ur_PK"));
+              },
+              child: const Text("urdu")),
         ],
       )),
     );
